@@ -1,9 +1,11 @@
 
 import './App.css'
+
 import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
-import ParticlesBackground from './Components/ParticlesBackground'
 import PortfolioSection from './Components/PortfolioSection'
+import ServiceCards from './Components/ServiceCards'
+import StudioDescription from './Components/StudioDescription'
 
 function App() {
  
@@ -14,6 +16,8 @@ function App() {
         <Navbar/>
         <Hero/>
         <PortfolioSection/>
+        <StudioDescription/>
+      <ServiceCards/>
       </div>
     </>
   )

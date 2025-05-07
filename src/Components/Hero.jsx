@@ -10,7 +10,7 @@ export default function Hero() {
       <div className=" max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           We Shape Your Ideas Into <br />
-          <span className="text-cyan-400">Awesome Digital</span> <br />
+          <span className="text-white">Awesome Digital</span> <br />
           <span className="text-white">Experience</span>
         </h1>
         <p className="mt-6 text-gray-300">
