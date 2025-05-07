@@ -1,29 +1,22 @@
 import React from 'react';
 
-
-
 const StudioDescription = () => {
   return (
-    <div className="relative" style={{ width: "1150px", height: "180px", margin: "0 auto" }}>
-    
-      
-      {/* Text content with specific typography */}
-      <div className="absolute inset-0 flex items-center justify-center px-4">
+    <div className="relative w-full max-w-screen-lg mx-auto py-10 px-4">
+  
+      <div className="absolute inset-0 flex items-center justify-center">
         <h2
+          className="font-medium text-center text-gray-600 sm:text-2xl md:text-3xl lg:text-4xl"
           style={{
             fontFamily: "'Rethink Sans', sans-serif",
-            fontWeight: 500,
-            fontSize: "40px",
             lineHeight: "150%",
             letterSpacing: "0%",
-            color: "#666666",
-            textAlign: "center",
           }}
         >
           We are a full-service studio creating transformative{" "}
-          <span style={{ color: "#FFFFFF", fontWeight: 600 }}>digital experiences and solutions.</span>{" "}
-          <span style={{ color: "#666666" }}>specializing in</span>{" "}
-          <span style={{ color: "#FFFFFF", fontWeight: 600 }}>websites and web applications.</span>
+          <span className="font-semibold text-white">digital experiences and solutions.</span>{" "}
+          <span className="text-gray-600">specializing in</span>{" "}
+          <span className="font-semibold text-white">websites and web applications.</span>
         </h2>
       </div>
     </div>

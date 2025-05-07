@@ -50,14 +50,13 @@ const ServiceCard = () => {
           className={`w-[286px] h-[314px] rounded-xl border ${service.borderColor} overflow-hidden relative ${service.offset} ${service.bgColor}`}
         >
           <div className="p-2 flex flex-col h-full">
-            {/* Icon */}
+           
             <div className="mb-12">
               <div className={`p-2 rounded-lg inline-block `}>
                 {service.icon}
               </div>
             </div>
 
-            {/* Title and Arrow */}
             <div className="flex justify-between items-start">
               <h2 className="text-lg font-semibold text-white">
                 {service.title}
@@ -65,7 +64,6 @@ const ServiceCard = () => {
               <FiArrowUpRight className="w-5 h-5 text-white" />
             </div>
 
-            {/* Description */}
             <p className="text-sm text-gray-300 mt-3 leading-relaxed">
               {service.description}
             </p>

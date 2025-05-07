@@ -1,13 +1,13 @@
 import HeroBackground from "./HeroBackground";
-import Logo1 from "../assets/images/Logo1.png"
-
+import Logo1 from "../assets/images/Logo1.png";
 
 
 export default function Hero() {
   return (
-    <section className="relative text-white pt-32 pb-20 px-4">
+    <div className="relative text-white pt-32 pb-20 px-4">
+     
       <HeroBackground />
-      <div className=" max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           We Shape Your Ideas Into <br />
           <span className="text-white">Awesome Digital</span> <br />
@@ -22,13 +22,13 @@ export default function Hero() {
 
         {/* Logos */}
         <div className="mt-12 flex flex-wrap justify-center gap-8 opacity-80">
-        <img
-  src={Logo1}
-  alt="Logo1"
-  className="w-[600px] h-[200px] object-contain"
-/>
-</div>
+          <img
+            src={Logo1}
+            alt="Logo1"
+            className="w-[200px] sm:w-[300px] md:w-[400px] lg:w-[600px] h-auto object-contain"
+          />
+        </div>
       </div>
-    </section>
+    </div>
   );
 }

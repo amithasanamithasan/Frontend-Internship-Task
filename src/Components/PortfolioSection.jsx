@@ -21,18 +21,19 @@ const PortfolioSection = () => {
   ];
 
   return (
-    <section className="relative w-full max-w-screen-2xl mx-auto" 
+    <div className="relative w-full max-w-screen-2xl mx-auto" 
     style={{ maxWidth: "1440px", height: "342px" }}>
       <HeroBackground />
       
-      <div className="relative z-10 flex overflow-x-auto pl-12
+      <div className="relative z-10 flex overflow-x-auto pl-4 md:pl-12
        overflow-y-hidden h-full gap-6 px-4 py-2 scrollbar-hide">
         {portfolioItems.map((item) => (
           <div 
             key={item.id} 
             className="flex-shrink-0 relative"
             style={{
-              width: "400px",
+              width: "100%",
+              maxWidth: "400px",
               height: "306px",
               marginTop: "12px"
             }}
@@ -46,7 +47,6 @@ const PortfolioSection = () => {
                 alt={`Portfolio item ${item.id}`}
                 className="w-full h-full object-cover"
                 style={{
-                  width: "457px",
                   height: "306px"
                 }}
               />
@@ -54,7 +54,7 @@ const PortfolioSection = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
