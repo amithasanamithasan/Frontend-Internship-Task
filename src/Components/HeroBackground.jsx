@@ -11,7 +11,7 @@ export default function HeroBackground() {
     
       <div className="absolute top-1/2 left-1/2
        -translate-x-1/2 -translate-y-1/3 w-full lg:w-/5 
-       aspect-square rounded-full bg-gradient-to-b from-white/40
+       rounded-full bg-gradient-to-b 
         via-white/10 to-transparent"></div>
     </div>
   );

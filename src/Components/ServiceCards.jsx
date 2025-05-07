@@ -4,6 +4,7 @@ import icon1 from '../assets/images/Frame.png';
 import icon2 from '../assets/images/Frame2.png';
 import icon3 from '../assets/images/Frame3.png';
 import icon4 from '../assets/images/Frame4.png';
+import HeroBackground from './HeroBackground';
 
 const services = [
   {
@@ -44,6 +45,7 @@ const services = [
 const ServiceCard = () => {
   return (
     <div className="flex flex-wrap ml-10 py-10">
+      <HeroBackground/>
       {services.map((service, index) => (
         <div
           key={index}
